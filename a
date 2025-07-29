@@ -1976,6 +1976,8 @@ btn("NAME REANIMATE", function()
         local AfkllegWeld = getPartJoint(afklleg)
         local afkrarm = getPartFromMesh(93749227415046,103757531289975)
         local AfkrarmoWeld = getPartJoint(afkrarm)
+        local afklarm = getPartFromMesh(117649985156221,103757531289975)
+        local AfklarmoWeld = getPartJoint(afklarm)
 
 
 
@@ -1991,6 +1993,7 @@ Neck.C0=Lerp(Neck.C0,cfMul(cf(0,1,0),angles(-1.5707963267948966,0,3.141592653589
 AfkrlegWeld.C0=Lerp(AfkrlegWeld.C0,cfMul(cf(1,5,0.5),angles(0,-0.08726646259971647+0.017453292519943295*sin(sine*3),0)),deltaTime)
 AfkllegWeld.C0=Lerp(AfkllegWeld.C0,cfMul(cf(6,1,0),angles(0.08726646259971647+0.0017453292519943296*sin(sine*3),0,-1.5707963267948966)),deltaTime)
 AfkrarmoWeld.C0=Lerp(AfkrarmoWeld.C0,cf(3,-0.9819998741149902,0.6+0.1*sin(sine*-3)),deltaTime) 
+AfklarmoWeld.C0=Lerp(AfklarmoWeld.C0,cf(-3,1,0.6+0.1*sin(sine*-3)),deltaTime)
 
 end,
 		walk = function()
